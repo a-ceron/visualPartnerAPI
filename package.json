@@ -1,0 +1,23 @@
+{
+  "name": "visualpartnerapi",
+  "version": "1.0.0",
+  "description": "VisualThinking API",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./node_modules/.bin/jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a-ceron/visualPartnerAPI.git"
+  },
+  "author": "aceron",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/a-ceron/visualPartnerAPI/issues"
+  },
+  "homepage": "https://github.com/a-ceron/visualPartnerAPI#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "jest": "^28.0.3"
+  }
+}
