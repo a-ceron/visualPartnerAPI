@@ -9,4 +9,9 @@ describe("Test for PartnerController class", ()=>{
         const result= PartnerController.getCertificationPartners();
         expect( result.length ).toBe(29);
     });
+    test("(3) Test for getCreditsPartners method",()=>{
+        const credits= 800;
+        const result= PartnerController.getCreditsPartners( credits );
+        expect( result.length ).toBe(9);
+    });
 });

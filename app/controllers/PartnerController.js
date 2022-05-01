@@ -10,6 +10,10 @@ class PartnerController{
         const partners= Reader.readFile('visualpartners.json');
         return PartnerService.getCertificationPartners(partners);
     }
+    static getCreditsPartners( credits ){
+        const partners= Reader.readFile('visualpartners.json');
+        return PartnerService.filterByCredits(partners, credits);
+    }
 }
 
 module.exports = PartnerController;
