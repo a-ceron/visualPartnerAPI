@@ -46,4 +46,32 @@ describe("Test for PartnerService class", ()=>{
         const result= PartnerSerive.getAll(partners);
         expect(result).toEqual(expected);
     });
+    test("(3) Get certification partners", ()=>{
+        const partners= [
+            {
+                "name": "John",
+                "haveCertification": true
+            },
+            {
+                "name": "Jane",
+                "haveCertification": false
+            },
+            {
+                "name": "Jack",
+                "haveCertification": true
+            }
+        ];
+        const expected= [
+            {
+                "name": "John",
+                "haveCertification": true
+            },
+            {
+                "name": "Jack",
+                "haveCertification": true
+            }
+        ];
+        const result= PartnerSerive.getCertificationPartners(partners);
+        expect(result).toEqual(expected);
+    });
 });

@@ -6,6 +6,10 @@ class PartnerSerive{
     static getAll(partners){
         return partners;
     }
+    static getCertificationPartners(partners){
+        return partners.filter(partner=> partner.haveCertification);
+    }
+
 }
 
 module.exports = PartnerSerive;
